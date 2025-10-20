@@ -90,7 +90,14 @@ export function PricingPlans() {
 
                   <p className="text-[#B0B0B0] mb-6">{plan.description}</p>
 
-                  
+                  <div className="mb-6">
+                    <div className="flex items-baseline gap-1">
+                      <span className="font-[family-name:var(--font-display)] font-extrabold text-5xl text-[#F5F5F5]">
+                        {plan.price}
+                      </span>
+                      {plan.period && <span className="text-[#B0B0B0] text-xl">{plan.period}</span>}
+                    </div>
+                  </div>
 
                   <Button
                     className={`w-full mb-6 ${
